@@ -1,0 +1,78 @@
+@import "./variables.scss";
+
+.footer__container{
+    padding: 5rem 2rem 5rem 2rem;
+    background-color: $secondary-color;
+    color: $white-color;
+}
+
+.footer{
+    flex-direction: column;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+}
+
+.footerinfo{
+    margin-right: 3rem;
+}
+
+.footer__info-cont{
+    justify-content: space-between;
+    display: flex;
+}
+
+.footerinfo{
+    h2{
+        font-size: $size-h2;
+        cursor: pointer;
+    }
+
+    h2:hover{
+        color: $primary-color;
+    }
+
+    p{
+        margin: 1rem 0;
+        cursor: pointer;
+        color: $dark-font-color;
+    }
+
+    p:hover{
+        color: $white-color;
+    }
+}
+
+.footer__copyright{
+    margin: 2em 0em 0em 0em;
+    align-items: center;
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__copyright{
+    h2{
+        cursor: pointer;
+    }
+
+    h2:hover{
+        color: $primary-color;
+    }
+
+    p{
+        color: $light-font-color;
+    }
+
+}
+
+.footer__social-icon{
+    cursor: pointer;
+    font-size: 2em;
+    margin: 0 1em 0 0;
+}
+
+.footer__social-icon:hover{
+    color: $primary-color;
+}

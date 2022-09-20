@@ -1,0 +1,171 @@
+@import "./variables.scss";
+
+$gapbetinfotag: 50;
+
+.hero__section {
+  height: 100%;
+}
+
+.herosection-cont {
+  & {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.herosection__heading {
+  height: 50vh;
+  color: $body-font-color;
+  background-color: rgba(0, 0, 0, 0.726);
+}
+
+.herosection__heading {
+  & {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    & {
+      margin: 0rem 0 1rem 0;
+      font-size: 3rem;
+    }
+
+    span {
+      color: $primary-color;
+    }
+  }
+
+  h3 {
+    & {
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+      font-weight: lighter;
+    }
+  }
+
+  .knowus_button {
+    & {
+      cursor: pointer;
+      background-color: transparent;
+      color: $primary-color;
+      border: 3px solid $primary-color;
+      font-size: 1.2rem;
+      padding: 0.5rem 1rem;
+      transition-property: background-color color;
+      transition-duration: 200ms;
+    }
+    &:hover {
+      background-color: #ca9b76;
+      border-color: #ca9b76;
+      color: white;
+    }
+    &:active {
+      background-color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+}
+
+.herosection__button-cont {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.herosection-tour-button {
+  & {
+    margin: 0 1rem 0 0;
+    padding: 0.5rem 1rem;
+    background-color: $primary-color;
+    border: 2px solid $primary-color;
+    color: $white-color;
+    font-size: 1.2rem;
+    transition-property: background-color color;
+    transition-duration: 200ms;
+  }
+}
+
+.herosection-tour-button:hover {
+  background-color: #ca9b76;
+  border-color: #ca9b76;
+}
+
+.herosection-tour-button:active {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.herosection__banner-image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.herosection__images {
+  & {
+    position: relative;
+  }
+
+  .herosection__infos {
+    & {
+        z-index: -1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      position: absolute;
+      width: 200px;
+      height: 90px;
+      background-color: rgba(0, 0, 0, 0.733);
+    }
+
+    .herosection__infos{
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h2 {
+      color: white;
+    }
+
+    p {
+      color: $primary-color;
+      font-weight: bold;
+    }
+
+    img{
+        margin-right: 1rem;
+        filter: invert(100%);
+        width: 50px;
+    }
+
+  }
+
+  .herosection__info1 {
+    & {
+      top: 50px;
+    }
+
+    
+
+  }
+
+  .herosection__info2 {
+    
+    top: 160px;
+   
+  }
+
+  .herosection__info3 {
+    top: 270px;
+    
+  }
+}
