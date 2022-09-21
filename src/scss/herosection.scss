@@ -15,7 +15,7 @@ $gapbetinfotag: 50;
 }
 
 .herosection__heading {
-  height: 50vh;
+  height: 60vh;
   color: $body-font-color;
   background-color: rgba(0, 0, 0, 0.726);
 }
@@ -58,11 +58,13 @@ $gapbetinfotag: 50;
       transition-property: background-color color;
       transition-duration: 200ms;
     }
+
     &:hover {
       background-color: #ca9b76;
       border-color: #ca9b76;
       color: white;
     }
+
     &:active {
       background-color: $primary-color;
       border-color: $primary-color;
@@ -114,22 +116,26 @@ $gapbetinfotag: 50;
 
   .herosection__infos {
     & {
-        z-index: -1;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+      z-index: -1;
+      // display: flex;
+      // flex-direction: row;
+      // justify-content: center;
+      // align-items: center;
+      display: grid;
+      grid-template-columns: 40% 60%;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       width: 200px;
       height: 90px;
       background-color: rgba(0, 0, 0, 0.733);
     }
 
-    .herosection__infos{
-        display: flex;
+    .herosection__info-img-cont{
+      display: flex;
       justify-content: center;
-      align-items: center;
       flex-direction: column;
+      align-items: center;
     }
 
     h2 {
@@ -141,10 +147,9 @@ $gapbetinfotag: 50;
       font-weight: bold;
     }
 
-    img{
-        margin-right: 1rem;
-        filter: invert(100%);
-        width: 50px;
+    img {
+      filter: invert(100%);
+      width: 50px;
     }
 
   }
@@ -154,18 +159,18 @@ $gapbetinfotag: 50;
       top: 50px;
     }
 
-    
+
 
   }
 
   .herosection__info2 {
-    
+
     top: 160px;
-   
+
   }
 
   .herosection__info3 {
     top: 270px;
-    
+
   }
 }

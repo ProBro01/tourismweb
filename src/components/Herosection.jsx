@@ -6,6 +6,10 @@ import hotelicon from "../assets/images/hotelicon.png";
 import touristplaceicon from "../assets/images/touristplaceicon.png";
 // stylesheets
 import "../css/herosection.css";
+// components
+import { Sidebars } from "./Sidebars";
+// data
+import { sidebardata } from "../Data.js"
 
 export const Herosection = () => {
   return (
@@ -13,27 +17,13 @@ export const Herosection = () => {
       <div className="herosection-cont">
         <img src={banner} className="herosection__banner-image" />
         <div className="herosection__images">
-          <div className="herosection__info1 herosection__infos">
-          <img src={touristicon} />
-            <div>
-              <h2>10000+</h2>
-              <p>Visited Tourist</p>
-            </div>
-          </div>
-          <div className="herosection__info2 herosection__infos">
-            <img src={touristplaceicon} />
-            <div>
-              <h2>90+</h2>
-              <p>Places Covered</p>
-            </div>
-          </div>
-          <div className="herosection__info3 herosection__infos">
-            <img src={hotelicon} />
-            <div>
-              <h2>30+</h2>
-              <p>Hotels</p>
-            </div>
-          </div>
+          {
+            Object.keys(sidebardata).map((element, index) => {
+              return (
+                <Sidebars touristicon={sidebardata[element].icon} number={sidebardata[element].numdata} className={sidebardata[element].classname} title={sidebardata[element].title} />
+              )
+            })
+          }
         </div>
         <div className="herosection__heading">
           <h1>
